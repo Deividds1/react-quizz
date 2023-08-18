@@ -1,0 +1,1 @@
+- Replicar el proyecto, quedando el diseño a libre elección del programador. (Colores, fondos, etc.)- El proyecto debe estar realizado con React y Typescript. - Utilizar un API para consumir las encuestas. Ej: https://opentdb.com/api_config.php- Crear un hook personalizado para consumir el API y que sirva para cualquiera llamada a API. 
