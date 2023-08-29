@@ -58,15 +58,15 @@ export default function App() {
     <div className='app'>
 
       {questions.length === 0 ? (
-        <p>Cargando...</p>
+        <p>Loading...</p>
       ) : showScore ? (
         <div className='score-section'>
-          <h2>Resultados</h2>
-          <h3>Total de preguntas: {questions.length}</h3>
+          <h2>Results</h2>
+          <h3>Total questions: {questions.length}</h3>
           <div className="rightAnwsers">
             <p>
-              <img src="/check-icon.svg" alt="icono de marcación correcta" />
-              Respuestas correctas:
+              <img src="/check-icon.svg" alt="check icon" />
+              Correct answers:
             </p>
             <span>
               {score}
@@ -74,8 +74,8 @@ export default function App() {
           </div>
           <div className="wrongAnwsers">
             <p>
-              <img src="/x-icon.svg" alt="Ícono de marcación incorrecta" />
-              Respuestas incorrectas:
+              <img src="/x-icon.svg" alt="red x icon" />
+              Wrong answers:
             </p>
             <span>
               {questions.length - score}
@@ -86,7 +86,7 @@ export default function App() {
               <img className="conffetiEffect" src="conffeti.gif" alt="confeti" />
             ) : (
 
-              <h1 className="messageResult">Has respondido correctamente muy pocas preguntas 😭</h1>
+              <h1 className="messageResult">You have answered very few questions correctly 😭</h1>
 
             )}
           </div>
@@ -99,7 +99,7 @@ export default function App() {
           <div className='question-section'>
             <div className='question-count'>
               <h1 className='title'>Quizz app</h1>
-              <span>Pregunta {currentQuestion + 1}</span>/{questions.length}
+              <span>Question {currentQuestion + 1}</span>/{questions.length}
             </div>
             <div className='question-text'>
               {questions[currentQuestion] && (
