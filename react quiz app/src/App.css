@@ -191,7 +191,7 @@ button:hover {
 }
 
 .messageResult {
-  margin-top: 40px;
+  margin: 40px 0;
 }
 
 @media (max-width: 500px) {
